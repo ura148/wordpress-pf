@@ -33,6 +33,10 @@
         <?php the_post_navigation(); ?>
       </article>
     <?php endwhile; endif; ?>
+
+    <footer class="myfoot">
+      <?php bloginfo ( 'name' ); ?>
+    </footer>
     <?php wp_footer(); ?>
   </body>
 </html>

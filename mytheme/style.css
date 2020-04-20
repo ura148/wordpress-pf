@@ -58,6 +58,7 @@ body *::after {
   --f6: 0.8em; /* 39.04px */
 
   --bacecolor: #63a211; /* 基本色 */
+  --gradient: linear-gradient( 79.7deg, rgba(34,126,34,1) 8.2%, rgba(99,162,17,1)84.9% );
 }
 /*ーーーーーーーーーーーーーーーーー
 　/変数
@@ -267,4 +268,28 @@ a:hover{
 }
 /*ーーーーーーーーーーーーーーーーー
 　/header
+ーーーーーーーーーーーーーーーーー*/
+
+
+/*ーーーーーーーーーーーーーーーーー
+　footer
+ーーーーーーーーーーーーーーーーー*/
+.myfoot{
+  padding: 16px;
+  background-color: var(--bacecolor);
+  background-image: var(--gradient);
+  color: #ffffff;
+  text-align: center
+}
+
+
+
+
+
+
+
+
+
+/*ーーーーーーーーーーーーーーーーー
+　/footer
 ーーーーーーーーーーーーーーーーー*/
