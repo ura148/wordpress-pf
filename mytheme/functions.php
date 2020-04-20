@@ -21,6 +21,14 @@
 add_action( 'after_setup_theme', 'mytheme_setup' );
 
 function mytheme_enqueue(){
+  //Google fonts を読み込む
+  wp_enqueue_style(
+    'myfonts',
+    'https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap',
+    array(),
+    null
+  );
+
   //Dashiconsを読み込み
   wp_enqueue_style(
     'dashicons'

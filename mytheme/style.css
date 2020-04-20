@@ -59,6 +59,8 @@ body *::after {
 
   --bacecolor: #63a211; /* 基本色 */
   --gradient: linear-gradient( 79.7deg, rgba(34,126,34,1) 8.2%, rgba(99,162,17,1)84.9% );
+
+  --myfont: 'Josefin Sans', sans-serif;
 }
 /*ーーーーーーーーーーーーーーーーー
 　/変数
@@ -261,6 +263,7 @@ a:hover{
 
 .myhead a {
   font-size: var(--f3);
+  font-family: var(--myfont);
 }
 
 .myhead p {
