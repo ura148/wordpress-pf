@@ -148,6 +148,27 @@ a:hover{
 　/リンク設定
 ーーーーーーーーーーーーーーーーー*/
 
+
+/*ーーーーーーーーーーーーーーーーー
+　スクリーンリーダー用のテキスト
+ーーーーーーーーーーーーーーーーー*/
+.screen-reader-text{
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+/*ーーーーーーーーーーーーーーーーー
+　/スクリーンリーダー用のテキスト
+ーーーーーーーーーーーーーーーーー*/
+
+
 /*ーーーーーーーーーーーーーーーーー
 　記事カテゴリー
 ーーーーーーーーーーーーーーーーー*/
@@ -156,6 +177,15 @@ a:hover{
   justify-content: center;
   padding: 0;
   list-style-type: none;
+}
+
+.post-categories::before{
+  content:"\f318";
+  font-family: "dashicons";
+  color: var(--bacecolor);
+  font-size: var(--f2);
+  line-height: 1;
+  margin-right: 5px;
 }
 
 .post-categories li:not(:last-child){
@@ -169,22 +199,49 @@ a:hover{
   color: var(--bacecolor);
   font-size: var(--f6);
 }
+/*ーーーーーーーーーーーーーーーーー
+　/記事カテゴリー
+ーーーーーーーーーーーーーーーーー*/
 
 
+/*ーーーーーーーーーーーーーーーーー
+　前後の記事へのリンク
+ーーーーーーーーーーーーーーーーー*/
+.nav-links{
+  display: flex;
+  margin: 30px 0;
+  font-size; var(--f6);
+}
 
+.nav-previous{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
 
+.nav-next{
+  flex: 1;
+  margin-left: 10px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /*!!!*/
+}
 
+.nav-previous::before{
+  content: "\f141";
+}
 
+.nav-next::after{
+  content: "\f139";
+}
 
-
-
-
-
-
-
-
-
-
+.nav-previous::before, .nav-next::after{
+  font-family: "dashicons";
+  color: var(--bacecolor);
+  font-size: var(--f2);
+  line-height: 1;
+}
 /*ーーーーーーーーーーーーーーーーー
 　/記事カテゴリー
 ーーーーーーーーーーーーーーーーー*/

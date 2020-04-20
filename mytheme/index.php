@@ -21,6 +21,8 @@
           </time>
         </div>
         <?php the_content(); ?>
+
+        <?php the_post_navigation(); ?>
       </article>
     <?php endwhile; endif; ?>
     <?php wp_footer(); ?>

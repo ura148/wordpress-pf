@@ -21,6 +21,11 @@
 add_action( 'after_setup_theme', 'mytheme_setup' );
 
 function mytheme_enqueue(){
+  //Dashiconsを読み込み
+  wp_enqueue_style(
+    'dashicons'
+  );
+
   // style.cssを読み込む
   wp_enqueue_style(
     'mytheme-style',
