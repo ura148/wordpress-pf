@@ -245,3 +245,26 @@ a:hover{
 /*ーーーーーーーーーーーーーーーーー
 　/記事カテゴリー
 ーーーーーーーーーーーーーーーーー*/
+
+
+/*ーーーーーーーーーーーーーーーーー
+　header
+ーーーーーーーーーーーーーーーーー*/
+.myhead{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* 上下方向の中央揃え */
+  padding: 20px 0;
+  color: #444444;
+}
+
+.myhead a {
+  font-size: var(--f3);
+}
+
+.myhead p {
+  font-size: var(--f6);
+}
+/*ーーーーーーーーーーーーーーーーー
+　/header
+ーーーーーーーーーーーーーーーーー*/
