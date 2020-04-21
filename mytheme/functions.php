@@ -17,6 +17,12 @@
     'style',
     'script'
   ) );
+
+  //アイキャッチ画像の有効化
+  add_theme_support( 'post_thumbnails' );
+
+  //
+  add_theme_support( 'align-wide' );
 }
 add_action( 'after_setup_theme', 'mytheme_setup' );
 

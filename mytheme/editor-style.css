@@ -60,7 +60,16 @@ h2{
   padding-left: 14px;
 }
 
-/* 横幅の設定 */
-.wp-block{
-  min-width: calc( 720px + 30px );
+/*ーーーーーーーーーーーーーーーーー
+　横幅設定
+ーーーーーーーーーーーーーーーーー*/
+.wp-block:not([data-align="full"])not([data-align="wide"]) {
+  max-width: calc( 720px + 30px );
 }
+
+.wp-block[data-align="wide"]{
+  max-width: calc( 1020px +30px );
+}
+/*ーーーーーーーーーーーーーーーーー
+　/横幅設定
+ーーーーーーーーーーーーーーーーー*/

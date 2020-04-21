@@ -6,6 +6,11 @@ Description: urauraが作成したオリジナルテーマです。
 Version: 1.0
  */
 
+ img {
+   max-width: 100%;
+   height: auto;
+ }
+
  .alignleft{
    float: left;
    margin-left: 0;
@@ -28,7 +33,7 @@ Version: 1.0
   text-align: center;
 }
 
-.figure{
+figure {
   margin-left: 0;
   margin-right: 0;
 }
@@ -61,6 +66,8 @@ body *::after {
   --gradient: linear-gradient( 79.7deg, rgba(34,126,34,1) 8.2%, rgba(99,162,17,1)84.9% );
 
   --myfont: 'Josefin Sans', sans-serif;
+
+  --myw: 720px; /* 標準幅 */
 }
 /*ーーーーーーーーーーーーーーーーー
 　/変数
@@ -119,11 +126,32 @@ body{
   margin-right: 10px;
 }
 
+.alignfull{
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
 @media (min-width: 740px) {
   .mycontainer{
-    max-width: 720px;
+    max-width: var(--myw);
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .alignfull{
+    margin-left: calc( ( 100vw - var(--myw);) / 2 * -1 );
+    margin-right: calc( ( 100vw - var(--myw);) / 2 * -1 );
+  }
+
+  .alignwide{
+    margin-left: calc( ( 100vw - var(--myw);) / 4 * -1 );
+    margin-right: calc( ( 100vw - var(--myw);) / 4 * -1 );
+}
+
+@media (min-width: 1320px) {
+  .alignwide{
+    margin-left: -150px;
+    margin-right: -150px;
   }
 }
 
@@ -134,6 +162,12 @@ body{
   padding-top: 20px;
   padding-bottom: 10px;
   text-align: center;
+}
+
+.myposthead p {
+  color: var(--bacecolor);
+  font-family: var(--myfont);
+  font-weight: bold;
 }
 
 /*ーーーーーーーーーーーーーーーーー
@@ -208,12 +242,36 @@ a:hover{
 
 
 /*ーーーーーーーーーーーーーーーーー
+　ページネーション
+ーーーーーーーーーーーーーーーーー*/
+.pagination .nav-links{
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.pagination .page-numbers:not(:last-child){
+  margin-right: 15px;
+}
+
+.pagination a {
+  color: var(--bacecolor);
+}
+
+.pagination .current {
+  color: #aaaaaa;
+}
+/*ーーーーーーーーーーーーーーーーー
+　/ページネーション
+ーーーーーーーーーーーーーーーーー*/
+
+
+/*ーーーーーーーーーーーーーーーーー
 　前後の記事へのリンク
 ーーーーーーーーーーーーーーーーー*/
 .nav-links{
   display: flex;
   margin: 30px 0;
-  font-size; var(--f6);
+  font-size: var(--f6);
 }
 
 .nav-previous{
@@ -246,7 +304,7 @@ a:hover{
   line-height: 1;
 }
 /*ーーーーーーーーーーーーーーーーー
-　/記事カテゴリー
+　/前後の記事へのリンク
 ーーーーーーーーーーーーーーーーー*/
 
 
@@ -285,14 +343,40 @@ a:hover{
   text-align: center
 }
 
-
-
-
-
-
-
+/*ーーーーーーーーーーーーーーーーー
+　/footer
+ーーーーーーーーーーーーーーーーー*/
 
 
 /*ーーーーーーーーーーーーーーーーー
-　/footer
+　mypostlist
+ーーーーーーーーーーーーーーーーー*/
+.mypostlist{
+  display: flex;
+  flex-wrap: wrap; /* !!!　並べられた要素の横幅合計が100％を超えたときに改行する */
+  justify-content: space-between;
+}
+
+.mypostlist article {
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+.mypostlist figure {
+  margin: 0;
+}
+
+.mypostlist img {
+  height: 180px;
+  object-fit: cover; /* !!! */
+}
+
+.mypostlist h2 {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: var(--f6);
+}
+/*ーーーーーーーーーーーーーーーーー
+　/mypostlist
 ーーーーーーーーーーーーーーーーー*/
