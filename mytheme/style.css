@@ -311,7 +311,7 @@ a:hover{
 /*ーーーーーーーーーーーーーーーーー
 　header
 ーーーーーーーーーーーーーーーーー*/
-.myhead{
+.myhead > div{
   display: flex;
   justify-content: space-between;
   align-items: center; /* 上下方向の中央揃え */
