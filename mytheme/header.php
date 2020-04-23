@@ -9,19 +9,25 @@
     <?php wp_body_open(); ?>
 
     <header class="myhead mycontainer">
-      <div class="alignwide">
+      <div>
         <a href="<?php echo esc_url( home_url( '/' )); ?>">
           <?php bloginfo( 'name' ); ?>
         </a>
 
-        <nav>
+        <!-- <button class="btn-trigger">
+          <span class="btn-nav-line"></span>
+          <span class="btn-nav-line"></span>
+          <span class="btn-menu menu">menu</span>
+          <span class="btn-menu close">close</span>
+        </button> -->
+
+        <!-- <div class="header-nav">
           <?php wp_nav_menu( array(
             'theme_location'   =>'mainmenu',
-            'container_class'  =>'header-nav',
-            'menu_class'       =>'nav-list'));
+            'menu_class'    =>'nav-list',
+            'container'        => nav
+            ));
           ?>
-        </nav>
-
-        <!-- <p><?php bloginfo( 'description' ); ?></p> -->
+        </div> -->
       </div>
     </header>
