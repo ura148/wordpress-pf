@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* eyecatch */
+.eyecatch{
+  background-image: url(./img/top/eyecatch__sp.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 61.8046vw;
+}

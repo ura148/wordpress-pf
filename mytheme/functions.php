@@ -47,6 +47,14 @@ function mytheme_enqueue(){
     array(),
     filemtime(get_theme_file_path('style.css'))
   );
+
+  if( is_front_page() ){
+		// １つ目（css）
+		wp_enqueue_style(
+      'top-page',
+      '/wp-content/themes/mytheme/top-page.css', array());
+	}
+
 }
 
 add_action( 'wp_enqueue_scripts','mytheme_enqueue');

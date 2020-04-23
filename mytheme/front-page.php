@@ -1,11 +1,16 @@
 <?php get_header(); ?>
 
+
+
 <?php if(have_posts()): while(have_posts()):the_post(); ?>
   <article <?php post_class( 'mycontainer' ); ?>>
-    <div class="myposthead">
-      <?php the_category(); ?>
-      <h1><?php the_title(); ?></h1>
+    <div class="eyecatch alignfull">
+      <h1>
+        <p>uraura<br>portfolio<br>site<br></p>
+      </h1>
+    </div>
 
+    <div class="myposthead">
       <!--投稿日時を取得-->
       <time datetime="<?php echo esc_attr( get_the_date( DATE_w3c )); ?>">
         <?php echo esc_html( get_the_date() ); ?>
@@ -19,3 +24,6 @@
 
   </article>
 <?php endwhile; endif; ?>
+
+<!-- footerの呼び出し -->
+<?php get_footer(); ?>
