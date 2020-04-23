@@ -146,6 +146,7 @@ body{
   .alignwide{
     margin-left: calc( ( 100vw - var(--myw);) / 4 * -1 );
     margin-right: calc( ( 100vw - var(--myw);) / 4 * -1 );
+  }
 }
 
 @media (min-width: 1320px) {
