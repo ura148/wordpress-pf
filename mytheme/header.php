@@ -14,6 +14,14 @@
           <?php bloginfo( 'name' ); ?>
         </a>
 
-        <p><?php bloginfo( 'description' ); ?></p>
+        <nav>
+          <?php wp_nav_menu( array(
+            'theme_location'   =>'mainmenu',
+            'container_class'  =>'header-nav',
+            'menu_class'       =>'nav-list'));
+          ?>
+        </nav>
+
+        <!-- <p><?php bloginfo( 'description' ); ?></p> -->
       </div>
     </header>

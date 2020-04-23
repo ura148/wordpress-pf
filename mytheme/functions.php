@@ -50,3 +50,18 @@ function mytheme_enqueue(){
 }
 
 add_action( 'wp_enqueue_scripts','mytheme_enqueue');
+
+function mytheme_widgets(){
+  //widgetsエリアの追加（footer menu）
+  register_sidebar( array(
+    'id' => 'sidebar-1',
+    'name' => 'フッターメニュー',
+    'before_widget' => '<section id="%1$s" class="widget %2$s">',//パラメーターの1つ
+    'after_widget' => '</section>'//パラメーターの1つ
+  ) );
+}
+
+add_action( 'widgets_init','mytheme_widgets' );
+
+
+register_nav_menu('mainmenu', 'メインメニュー');
