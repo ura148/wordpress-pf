@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <?php  wp_head(); ?>
+    <php wp_header();>
   </head>
   <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>

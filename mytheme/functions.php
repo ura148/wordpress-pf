@@ -35,6 +35,13 @@ function mytheme_enqueue(){
     null
   );
 
+  wp_enqueue_style(
+    'Star Jedi',
+    'http://allfont.net/allfont.css?fonts=star-jedi',
+    array(),
+    null
+  );
+
   //Dashiconsを読み込み
   wp_enqueue_style(
     'dashicons'
@@ -49,7 +56,7 @@ function mytheme_enqueue(){
   );
 
   if( is_front_page() ){
-		// １つ目（css）
+		// front-page様CSS
 		wp_enqueue_style(
       'top-page',
       '/wp-content/themes/mytheme/top-page.css', array());
