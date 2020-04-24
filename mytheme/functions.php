@@ -42,6 +42,7 @@ function mytheme_enqueue(){
     null
   );
 
+
   //Dashiconsを読み込み
   wp_enqueue_style(
     'dashicons'
