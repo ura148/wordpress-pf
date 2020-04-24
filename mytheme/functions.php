@@ -20,6 +20,7 @@
 
   // アイキャッチ画像を有効化
 	add_theme_support( 'post-thumbnails' );
+  add_image_size('thumb750',750,446,true);
 
   //
   add_theme_support( 'align-wide' );

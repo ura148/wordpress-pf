@@ -18,21 +18,27 @@
       <p>初めましてurauraです。ポートフォリオサイトを見ていいただき、誠にありがとうございます!</p>
     </section>
     <section>
+      <h2 class="text-center">Portfolios</h2>
+
       <?php
-      $posts = get_posts(array(
-      'posts_per_page' => 1, // 表示件数
-      'category' => 'portfolio' // カテゴリIDもしくはスラッグ名
-      ));
+        $posts = get_posts(array(
+        'posts_per_page' => 2, // 表示件数
+        'category' => 'portfolio' // カテゴリIDもしくはスラッグ名
+        ));
       ?>
-      <?php if($posts): foreach($posts as $post): setup_postdata($post); ?>
-
-      <!--表示する内容が入ります。-->
-      <h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
-      <p><?php the_excerpt(); ?></p>
-      <p><a href="<?php the_permalink() ?>">続きを見る</a></p>
-      <!--表示する内容ここまで-->
-
-      <?php endforeach; endif; ?>
+        <?php if($posts): foreach($posts as $post): setup_postdata($post); ?>
+          <!--Portfolioタグがついたものを表示-->
+          <a href="<?php the_permalink(); ?>">
+            <div class="portfolio-post">
+              <figure class="alignfull">
+                <?php if( has_post_thumbnail() ): ?>
+                    <?php the_post_thumbnail();  ?>
+                <?php endif; ?>
+              </figure>
+              <h3 class="text-center"><?php the_title(); ?></h3>
+            </div>
+          </a>
+        <?php endforeach; endif; ?>
     </section>
 
 
