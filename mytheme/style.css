@@ -127,9 +127,8 @@ body{
   margin-right: 10px;
 }
 
-.alignfull{
-  margin-left: -10px;
-  margin-right: -10px;
+.alignfull{  /*オリジナルから修正あり*/
+  margin: 0 -10px
 }
 
 @media (min-width: 740px) {

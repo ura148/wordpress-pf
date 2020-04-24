@@ -18,8 +18,9 @@
     'script'
   ) );
 
-  //アイキャッチ画像の有効化
-  add_theme_support( 'post_thumbnails' );
+  // アイキャッチ画像を有効化
+	add_theme_support( 'post-thumbnails' );
+  add_image_size('thumb750',750,446,true);
 
   //
   add_theme_support( 'align-wide' );
@@ -35,6 +36,14 @@ function mytheme_enqueue(){
     null
   );
 
+  wp_enqueue_style(
+    'Star Jedi',
+    'http://allfont.net/allfont.css?fonts=star-jedi',
+    array(),
+    null
+  );
+
+
   //Dashiconsを読み込み
   wp_enqueue_style(
     'dashicons'
@@ -47,6 +56,14 @@ function mytheme_enqueue(){
     array(),
     filemtime(get_theme_file_path('style.css'))
   );
+
+  if( is_front_page() ){
+		// front-page様CSS
+		wp_enqueue_style(
+      'top-page',
+      '/wp-content/themes/mytheme/top-page.css', array());
+	}
+
 }
 
 add_action( 'wp_enqueue_scripts','mytheme_enqueue');
