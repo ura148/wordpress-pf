@@ -20,45 +20,68 @@ body {
 .text-center{
 	text-align: center;
 }
+p {
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
 
 h2 {
+	padding-top: 50px;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 18px;
 	font-weight: normal;
 	font-size: 3.2rem;
 	border-left: none;
-	padding-left: 0;
-	margin: 50px 0 18px 0;
 }
 
 h3 {
+	margin: 24px 0 55px;
 	font-weight: normal;
 	font-size: 2rem;
-	margin: 24px 0 55px;
 }
 
-p{
-	font-family:
+/* btn */
+.btna{
+	margin: 0 auto;
+	width: 61.8%;
+	height: 32px;
+	background-color: #F76756; /* Asoka Orange*/
+	border-radius: 4px;
+	color: #F8F7F3; /* Asoka White*/
 }
 
-
-
+.btna span {
+	display: block;
+	padding-top: 3px;
+	font-weight: bold;
+}
 
 
 /* eyecatch */
 .eyecatch{
+	height: 61.8046vw;
   background-image: url(./img/top/eyecatch__sp.jpg);
   background-size: cover;
   background-position: center;
-  height: 61.8046vw;
 }
 
 h1 {
+	padding: 12px 0 0 16px;
+  margin: 0;
   font-family: 'Star Jedi', arial;
   font-weight: normal;
   font-size: 3.6rem;
   line-height: 1.611;
 	color: #F8FAFC;
-  padding: 12px 0 0 16px;
-  margin: 0;
 }
 
 /* portofolio */
@@ -68,4 +91,20 @@ h1 {
 	object-position: center;
 	vertical-align: bottom;
 	display: block;
+}
+
+/* Characteristics */
+.character-items:not(:last-child){
+	margin-bottom: 44px;
+}
+.character-box img {
+	display: block;
+	width: 61.80vw;
+	height: auto;
+	margin: 0 auto;
+}
+
+.character-box p {
+	margin: 22px 0 0;
+	line-height: 1.3;
 }

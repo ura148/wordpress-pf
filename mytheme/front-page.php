@@ -17,6 +17,7 @@
 
       <p>初めましてurauraです。ポートフォリオサイトを見ていいただき、誠にありがとうございます!</p>
     </section>
+
     <section>
       <h2 class="text-center">Portfolios</h2>
 
@@ -39,6 +40,63 @@
             </div>
           </a>
         <?php endforeach; endif; ?>
+
+      <a href="https://uraura-design.site/category/portfolio/">
+        <div class="btna text-center">
+          <span class="text-center">portfolios一覧を見る</span>
+        </div>
+      </a>
+    </section>
+
+    <section>
+      <h2 class="text-center">Characteristics</h2>
+
+      <ul>
+        <li class="character-items">
+          <div class="character-box">
+            <?php echo "<img src='https://uraura-design.site/wp-content/themes/mytheme/img/top/chara1.png'>" ?>
+
+            <div class="character-text">
+              <p>新しいこと、自分の興味のあるモノゴトにはどんどん挑戦していきます。</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="character-items">
+          <div class="character-box">
+            <?php echo "<img src='https://uraura-design.site/wp-content/themes/mytheme/img/top/chara1.png'>" ?>
+
+            <div class="character-text">
+              <p>新しいこと、自分の興味のあるモノゴトにはどんどん挑戦していきます。</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="character-items">
+          <div class="character-box">
+            <?php echo "<img src='https://uraura-design.site/wp-content/themes/mytheme/img/top/chara1.png'>" ?>
+
+            <div class="character-text">
+              <p>新しいこと、自分の興味のあるモノゴトにはどんどん挑戦していきます。</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="character-items">
+          <div class="character-box">
+            <?php echo "<img src='https://uraura-design.site/wp-content/themes/mytheme/img/top/chara1.png'>" ?>
+
+            <div class="character-text">
+              <p>新しいこと、自分の興味のあるモノゴトにはどんどん挑戦していきます。</p>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-center">DailyCSS</h2>
     </section>
 
 
