@@ -18,8 +18,8 @@
     'script'
   ) );
 
-  //アイキャッチ画像の有効化
-  add_theme_support( 'post_thumbnails' );
+  // アイキャッチ画像を有効化
+	add_theme_support( 'post-thumbnails' );
 
   //
   add_theme_support( 'align-wide' );

@@ -28,7 +28,6 @@
 
       <!--表示する内容が入ります。-->
       <h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
-      <p><?php the_time('Y/m/d') ?></p>
       <p><?php the_excerpt(); ?></p>
       <p><a href="<?php the_permalink() ?>">続きを見る</a></p>
       <!--表示する内容ここまで-->
