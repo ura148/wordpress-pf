@@ -6,6 +6,12 @@ Description: urauraが作成したオリジナルテーマです。
 Version: 1.0
  */
 
+@font-face{
+font-family: 'Star Jedi';
+src: url("https://uraura-design.site/wp-includes/fonts/star-jedi_[allfont.net].woff") format("woff"),
+url("https://uraura-design.site/wp-includes/fonts/star-jedi_[allfont.net].eot") format("eot");
+}
+
  img {
    max-width: 100%;
    height: auto;
