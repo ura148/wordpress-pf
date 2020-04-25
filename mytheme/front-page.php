@@ -108,22 +108,27 @@
         'category' => '9' // カテゴリIDもしくはスラッグ名
         ));
       ?>
+      <ul class="dailystudy-list">
         <?php if($posts): foreach($posts as $post): setup_postdata($post); ?>
           <!--Portfolioタグがついたものを表示-->
-          <a href="<?php the_permalink(); ?>">
-            <div class="portfolio-post">
-              <figure class="alignfull">
-                <?php if( has_post_thumbnail() ): ?>
-                    <?php the_post_thumbnail();  ?>
-                <?php endif; ?>
-              </figure>
-              <h3 class="text-center"><?php the_title(); ?></h3>
-              <p><?php the_time('Y/m/d') ?></p>
-              <p><?php the_excerpt(); ?></p>
-              <p><a href="<?php the_permalink() ?>">続きを見る</a></p>
-            </div>
-          </a>
+          <li class="dailystudy-post">
+            <figure class="alignfull">
+              <?php if( has_post_thumbnail() ): ?>
+                  <?php the_post_thumbnail();  ?>
+              <?php endif; ?>
+            </figure>
+
+            <h3 class="text-center"><?php the_title(); ?></h3>
+            <p class="post-time text-center"><?php the_time('Y/m/d') ?></p>
+
+            <a href="<?php the_permalink() ?>">
+              <div class="btna text-center">
+                <span class="text-center">詳しく見る</span>
+              </div>
+            </a>
+          </li>
         <?php endforeach; endif; ?>
+      </ul>
 
       <a href="https://uraura-design.site/category/dailystudy/">
         <div class="btna text-center">
