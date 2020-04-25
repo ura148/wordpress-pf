@@ -64,30 +64,30 @@
 
         <li class="character-items">
           <div class="character-box">
-            <?php echo "<img src='https://uraura-design.site/wp-content/themes/mytheme/img/top/chara1.png'>" ?>
+            <?php echo "<img src='https://uraura-design.site/wp-content/themes/mytheme/img/top/chara2.png'>" ?>
 
             <div class="character-text">
-              <p>新しいこと、自分の興味のあるモノゴトにはどんどん挑戦していきます。</p>
+              <p>新しくなっていくモノゴトに常に興味が湧きます。映画鑑賞も新しいモノゴトの考え方を教えてくれるため好きです。</p>
             </div>
           </div>
         </li>
 
         <li class="character-items">
           <div class="character-box">
-            <?php echo "<img src='https://uraura-design.site/wp-content/themes/mytheme/img/top/chara1.png'>" ?>
+            <?php echo "<img src='https://uraura-design.site/wp-content/themes/mytheme/img/top/chara3.png'>" ?>
 
             <div class="character-text">
-              <p>新しいこと、自分の興味のあるモノゴトにはどんどん挑戦していきます。</p>
+              <p>「今人と違うこと・やらないようなことに挑戦しているな」と感じることにワクワクします。</p>
             </div>
           </div>
         </li>
 
         <li class="character-items">
           <div class="character-box">
-            <?php echo "<img src='https://uraura-design.site/wp-content/themes/mytheme/img/top/chara1.png'>" ?>
+            <?php echo "<img src='https://uraura-design.site/wp-content/themes/mytheme/img/top/chara4.png'>" ?>
 
             <div class="character-text">
-              <p>新しいこと、自分の興味のあるモノゴトにはどんどん挑戦していきます。</p>
+              <p>好きなものはとことん追求する。SWが好きすぎて1人シカゴまで旅立ったことがあります。</p>
             </div>
           </div>
         </li>
