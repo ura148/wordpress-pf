@@ -23,12 +23,12 @@
 
       <?php
         $posts = get_posts(array(
-        'posts_per_page' => 2, // 表示件数
-        'category' => 'portfolio' // カテゴリIDもしくはスラッグ名
+        'posts_per_page' => 5, // 表示件数
+        'category' => '7' // カテゴリIDもしくはスラッグ名
         ));
       ?>
         <?php if($posts): foreach($posts as $post): setup_postdata($post); ?>
-          <!--Portfolioタグがついたものを表示-->
+          <!--portfolioタグがついたものを表示-->
           <a href="<?php the_permalink(); ?>">
             <div class="portfolio-post">
               <figure class="alignfull">
@@ -96,7 +96,41 @@
     </section>
 
     <section>
-      <h2 class="text-center">DailyCSS</h2>
+      <h2 class="text-center">DailyStudy</h2>
+
+      <p>DailyStudyではcssやJavaScriptの勉強の一環として投稿しているブログです。</p>
+
+      <p>自分が仕組みを理解できていない機能などについて調べたり、参考サイトで紹介されているコードを自分なりに分解して理解を深めると行ったことを行っています。</p>
+
+      <?php
+        $posts = get_posts(array(
+        'posts_per_page' => 1, // 表示件数
+        'category' => '9' // カテゴリIDもしくはスラッグ名
+        ));
+      ?>
+        <?php if($posts): foreach($posts as $post): setup_postdata($post); ?>
+          <!--Portfolioタグがついたものを表示-->
+          <a href="<?php the_permalink(); ?>">
+            <div class="portfolio-post">
+              <figure class="alignfull">
+                <?php if( has_post_thumbnail() ): ?>
+                    <?php the_post_thumbnail();  ?>
+                <?php endif; ?>
+              </figure>
+              <h3 class="text-center"><?php the_title(); ?></h3>
+              <p><?php the_time('Y/m/d') ?></p>
+              <p><?php the_excerpt(); ?></p>
+              <p><a href="<?php the_permalink() ?>">続きを見る</a></p>
+            </div>
+          </a>
+        <?php endforeach; endif; ?>
+
+      <a href="https://uraura-design.site/category/dailystudy/">
+        <div class="btna text-center">
+          <span class="text-center">DailyStudy一覧を見る</span>
+        </div>
+      </a>
+
     </section>
 
 
