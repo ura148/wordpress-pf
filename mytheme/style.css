@@ -129,31 +129,6 @@ body{
   margin: 0 -18px
 }
 
-@media (min-width: 740px) {
-  .mycontainer{
-    max-width: var(--myw);
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .alignfull{
-    margin-left: calc( ( 100vw - var(--myw);) / 2 * -1 );
-    margin-right: calc( ( 100vw - var(--myw);) / 2 * -1 );
-  }
-
-  .alignwide{
-    margin-left: calc( ( 100vw - var(--myw);) / 4 * -1 );
-    margin-right: calc( ( 100vw - var(--myw);) / 4 * -1 );
-  }
-}
-
-@media (min-width: 1320px) {
-  .alignwide{
-    margin-left: -150px;
-    margin-right: -150px;
-  }
-}
-
 /*ーーーーーーーーーーーーーーーーー
 　/横幅
 ーーーーーーーーーーーーーーーーー*/
@@ -310,25 +285,26 @@ a:hover{
 /*ーーーーーーーーーーーーーーーーー
 　header
 ーーーーーーーーーーーーーーーーー*/
-.myhead.mycontainer{
-  margin-top: 0;
+.myhead{
+  background-color: #0A0A0C; /* Darth Vader color */
+  margin: 0;
   position: fixed;
   width: 100vw;
   top: 0;
-  left:50%;
-  transform: translate3d(-50%,0,0);
+  left: 0;
 }
 
-.myhead > div{
+.myhead > .mycontainer{
   align-items: center; /* 上下方向の中央揃え */
-  padding: 20px 0;
-  color: #444444;
+  padding: 20px 18px;
+  margin: 0;
+  color: #F8FAFC;
 
 }
 
 .myhead a {
   font-size: var(--f3);
-  font-family: var(--myfont);
+  font-family: 'Star Jedi', arial;
 }
 
 .myhead p {
@@ -481,4 +457,33 @@ a:hover{
 .btn-trigger.active .btn-nav-line:nth-child(2){
 	transform: rotate(-45deg) ;
 	top: 9px;
+}
+
+/* Tablet&PC version */
+@media (min-width: 740px) {
+  .mycontainer{
+    max-width: var(--myw);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .myhead .mycontainer{
+    margin: 0 auto;
+  }
+
+  .alignfull{
+    margin-left: calc( ( 100vw - var(--myw);) / 2 * -1 );
+    margin-right: calc( ( 100vw - var(--myw);) / 2 * -1 );
+  }
+
+  .alignwide{
+    margin-left: calc( ( 100vw - var(--myw);) / 4 * -1 );
+    margin-right: calc( ( 100vw - var(--myw);) / 4 * -1 );
+  }
+}
+
+@media (min-width: 1320px) {
+  .alignwide{
+    margin-left: -150px;
+    margin-right: -150px;
+  }
 }
