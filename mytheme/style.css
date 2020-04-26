@@ -466,7 +466,7 @@ a:hover{
 }
 
 /* Tablet&PC version */
-@media (min-width: 740px) {
+@media (min-width: 768px) {
   .mycontainer{
     max-width: var(--myw);
     margin-left: auto;
