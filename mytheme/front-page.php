@@ -4,10 +4,11 @@
 
 <?php if(have_posts()): while(have_posts()):the_post(); ?>
   <article <?php post_class( 'mycontainer' ); ?>>
+
     <div class="eyecatch alignfull">
-      <h1>
-        uraura<br>portfolio<br>site<br>
-      </h1>
+        <h1>
+        uraura<br class="br__sp">portfolio<br class="br__sp">site
+        </h1>
     </div>
 
     <section class="profile">
@@ -25,7 +26,7 @@
     </section>
 
     <section>
-      
+
       <h2 class="text-center">Portfolios</h2>
 
       <?php

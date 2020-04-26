@@ -139,6 +139,38 @@ h1 {
 }
 
 
+@media (min-width: 768px) {
+	/*ーーーーーーーーーーーーーーーーー
+	　bace
+	ーーーーーーーーーーーーーーーーー*/
+	.br__sp{
+		display: none;
+	}
+
+	/*ーーーーーーーーーーーーーーーーー
+	　eyecatch
+	ーーーーーーーーーーーーーーーーー*/
+	.eyecatch{
+		height: 27.1875vw;
+	  background-image: url(./img/top/eyecatch__pc.jpg);
+		position: relative;
+	}
+
+	h1 {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		-webkit- transform: translateX(-50%);
+		padding-top: calc(13.59375vw - 42px);
+		padding-left: 0;
+	  font-size: 6.6rem;
+	  line-height: 1;
+
+
+
+	}
+
+}
 
 
 
