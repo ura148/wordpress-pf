@@ -11,21 +11,25 @@
         </h1>
     </div>
 
-    <section class="profile">
+    <section class="section profile">
       <h2 class="text-center">Who is uraura?</h2>
 
-      <?php echo "<img src='https://uraura-design.site/wp-content/uploads/2020/04/profile.png'>" ?>
+      <div class="profile-content flex">
+        <?php echo "<img src='https://uraura-design.site/wp-content/uploads/2020/04/profile.png'>" ?>
 
-      <p>初めましてurauraです。ポートフォリオサイトを見ていただき、誠にありがとうございます!</p>
+        <div class="">
+          <p>初めましてurauraです。ポートフォリオサイトを見ていただき、誠にありがとうございます!</p>
 
-      <p>現在22歳。大学3年の3月に社員2名の企業に内定。内定後はインターンとして働く。同年12月に内定を辞退。</p>
+          <p>現在22歳。大学3年の3月に社員2名の企業に内定。内定後はインターンとして働く。同年12月に内定を辞退。</p>
 
-      <p>「自分が情熱を捧げることができることを仕事にしたい」と思い、Web業界への就職を目指し就職活動中。</p>
+          <p>「自分が情熱を捧げることができることを仕事にしたい」と思い、Web業界への就職を目指し就職活動中。</p>
 
-      <p>趣味は映画鑑賞・Star Wars グッズ収集・フットサル・釣り・サイクリングなど</p>
+          <p>趣味は映画鑑賞・Star Wars グッズ収集・フットサル・釣り・サイクリングなど</p>
+        </div>
+      </div>
     </section>
 
-    <section>
+    <section class="section">
 
       <h2 class="text-center">Portfolios</h2>
 
@@ -56,7 +60,7 @@
 
     </section>
 
-    <section>
+    <section class="section">
       <h2 class="text-center">Characteristics</h2>
 
       <ul>
@@ -103,7 +107,7 @@
       </ul>
     </section>
 
-    <section>
+    <section class="section">
       <h2 class="text-center">DailyStudy</h2>
 
       <p>DailyStudyではcssやJavaScriptの勉強の一環として投稿しているブログです。</p>

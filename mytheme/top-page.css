@@ -34,7 +34,7 @@ li {
 }
 
 h2 {
-	padding-top: 116px;
+	padding-top: 0;
 	padding-left: 0;
 	margin-top: 0;
 	margin-bottom: 18px;
@@ -143,8 +143,22 @@ h1 {
 	/*ーーーーーーーーーーーーーーーーー
 	　bace
 	ーーーーーーーーーーーーーーーーー*/
+	h2 {
+		padding-top: 0;
+		padding-left: 0;
+		margin-bottom: 95px;
+		font-size: 5.6rem;
+	}
 	.br__sp{
 		display: none;
+	}
+
+	.section{
+		margin-top: 160px;
+	}
+
+	.flex{
+		display: flex;
 	}
 
 	/*ーーーーーーーーーーーーーーーーー
@@ -165,26 +179,15 @@ h1 {
 		padding-left: 0;
 	  font-size: 6.6rem;
 	  line-height: 1;
-
-
-
 	}
 
+	/*ーーーーーーーーーーーーーーーーー
+	　profile
+	ーーーーーーーーーーーーーーーーー*/
+	.profile-content img {
+		width: auto;
+		height: 194px;
+		margin-right: 52px;
+		margin-bottom: 0;
+	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-vvvv
