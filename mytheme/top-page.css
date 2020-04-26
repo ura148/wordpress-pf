@@ -93,6 +93,21 @@ h1 {
 	color: #F8FAFC; /*Storm trooper White*/
 }
 
+/* profile */
+.profile img {
+	display: block;
+	margin: 0 auto 16px;
+	width: 61.8vw;
+}
+
+.profile p {
+	margin-bottom: 16px;
+}
+
+.profile p:last-of-type{
+	margin-bottom: 0;
+}
+
 
 /* Characteristics */
 .character-items:not(:last-child){

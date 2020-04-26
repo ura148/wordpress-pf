@@ -128,7 +128,7 @@ body{
 }
 
 .mycontainer{
-  margin: 65px 18px 0;
+  margin: 80px 18px 0;
 }
 
 .alignfull{  /*オリジナルから修正あり*/
@@ -310,7 +310,7 @@ a:hover{
 
 .myhead a {
   font-size: var(--f3);
-  font-family: 'Star Jedi', arial;
+  font-family: trajan-pro-3, arial;
 }
 
 .myhead p {

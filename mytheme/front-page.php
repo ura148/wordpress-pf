@@ -10,25 +10,31 @@
       </h1>
     </div>
 
-    <section>
+    <section class="profile">
       <h2 class="text-center">Who is uraura?</h2>
 
       <?php echo "<img src='https://uraura-design.site/wp-content/uploads/2020/04/profile.png'>" ?>
 
-      <p>初めましてurauraです。ポートフォリオサイトを見ていいただき、誠にありがとうございます!</p>
+      <p>初めましてurauraです。ポートフォリオサイトを見ていただき、誠にありがとうございます!</p>
+
+      <p>現在22歳。大学3年の3月に社員2名の企業に内定。内定後はインターンとして働く。同年12月に内定を辞退。</p>
+
+      <p>「自分が情熱を捧げることができることを仕事にしたい」と思い、Web業界への就職を目指し就職活動中。</p>
+
+      <p>趣味は映画鑑賞・Star Wars グッズ収集・フットサル・釣り・サイクリングなど</p>
     </section>
 
     <section>
+      
       <h2 class="text-center">Portfolios</h2>
 
       <?php
         $posts = get_posts(array(
-        'posts_per_page' => 5, // 表示件数
-        'category' => '7' // カテゴリIDもしくはスラッグ名
+        'posts_per_page' => 5,
+        'category' => '7'
         ));
       ?>
         <?php if($posts): foreach($posts as $post): setup_postdata($post); ?>
-          <!--portfolioタグがついたものを表示-->
           <a href="<?php the_permalink(); ?>">
             <div class="portfolio-post">
               <figure class="alignfull">
@@ -46,6 +52,7 @@
           <span class="text-center">portfolios一覧を見る</span>
         </div>
       </a>
+
     </section>
 
     <section>
@@ -110,7 +117,6 @@
       ?>
       <ul class="dailystudy-list">
         <?php if($posts): foreach($posts as $post): setup_postdata($post); ?>
-          <!--Portfolioタグがついたものを表示-->
           <li class="dailystudy-post">
             <figure class="alignfull">
               <?php if( has_post_thumbnail() ): ?>
