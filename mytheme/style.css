@@ -326,12 +326,27 @@ a:hover{
 
 .header-nav{
   position: fixed;
+  display: none;
   top: 48px;
   right: 0;
-	width: 61.84vw;
+	width: 61.80%;
 	height: 120vh;
 	background-color: rgba(10,10,12,0.9);
 }
+
+.menu-item{
+  padding: 4px 0;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.menu-item a{
+  display: block;
+  font-size: 16px;
+}
+
+
 /*ーーーーーーーーーーーーーーーーー
 　/header
 ーーーーーーーーーーーーーーーーー*/

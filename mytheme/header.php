@@ -34,24 +34,12 @@
         </button>
 
         <div class="header-nav">
-          <nav class="navigation">
-            <ul class="nav-list text-center">
-              <li class="nav-items">
-                <a href="<?php echo get_category_link( 7 ); ?>">
-                  <span>Portfolio</span>
-                </a>
-              </li>
-                <a href="<?php echo get_page_link( 392 ); ?>">
-                  <span>Blog</span>
-                </a>
-              <li>
-                <a href="<?php echo get_page_link( 432 ); ?>">
-                  <span>contact</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <?php wp_nav_menu( array(
+            'theme_location'   =>'mainmenu',
+            'menu_class'    =>'nav-list',
+            'container'        => nav
+            ));
+          ?>
         </div>
-
       </div>
     </header>
