@@ -326,6 +326,7 @@ a:hover{
 
 .header-nav{
   position: fixed;
+  display: none;
   top: 48px;
   right: 0;
 	width: 61.80%;
