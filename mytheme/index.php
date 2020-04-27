@@ -5,6 +5,7 @@
         <div class="myposthead">
           <?php the_category(); ?>
           <h1><?php the_title(); ?></h1>
+          <?php the_subtitle(); ?>
 
           <!--投稿日時を取得-->
           <time datetime="<?php echo esc_attr( get_the_date( DATE_w3c )); ?>">

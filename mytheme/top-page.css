@@ -49,8 +49,12 @@ h3 {
 	font-size: 2rem;
 }
 
-/* post */
-.portfolio-post img,.dailystudy-post img {
+figure {
+	margin: 0;
+}
+
+/* card */
+.top-card img {
 	height: 61.80vw;
 	object-fit: cover;
 	object-position: center;
@@ -162,6 +166,69 @@ h1 {
 	}
 
 	/*ーーーーーーーーーーーーーーーーー
+	　btn
+	ーーーーーーーーーーーーーーーーー*/
+	section .btna{
+		margin: 120px auto;
+	}
+
+	/*ーーーーーーーーーーーーーーーーー
+	　top-card
+	ーーーーーーーーーーーーーーーーー*/
+	.top-card{
+		box-shadow: 0 3px 6px 2px rgba(0,0,0,0.32);
+		margin-bottom: 66px;
+	}
+
+	.top-card__contents{
+		position: relative;
+	}
+
+	.top-card img{
+		width: 100%;
+		height: 232px;
+	}
+
+	.top-card h3{
+		margin-top: 44px;
+		margin-bottom: 0;
+		font-size: 3.2rem;
+	}
+
+	.top-card h4{
+		margin-top: 0;
+		font-size: 1.6rem;
+		font-weight: lighter;
+	}
+
+	.top-card p{
+		position: absolute;
+		bottom: 26px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	li:nth-child(2n) .flex{
+		flex-direction: row-reverse;
+	}
+
+	li:last-of-type .top-card{
+		margin-bottom: 0;
+	}
+
+	.flex-1{
+		flex-basis: 376px;
+	}
+
+	.flex-2{
+		flex-basis: 392px;
+	}
+
+
+
+
+
+	/*ーーーーーーーーーーーーーーーーー
 	　eyecatch
 	ーーーーーーーーーーーーーーーーー*/
 	.eyecatch{
@@ -190,4 +257,14 @@ h1 {
 		margin-right: 52px;
 		margin-bottom: 0;
 	}
+
+	/*ーーーーーーーーーーーーーーーーー
+	　portfolios
+	ーーーーーーーーーーーーーーーーー*/
+	.
+
+
+
+
+
 }

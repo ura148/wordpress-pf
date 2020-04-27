@@ -39,18 +39,30 @@
         'category' => '7'
         ));
       ?>
+
+      <ul>
+
+
         <?php if($posts): foreach($posts as $post): setup_postdata($post); ?>
-          <a href="<?php the_permalink(); ?>">
-            <div class="portfolio-post">
-              <figure class="alignfull">
-                <?php if( has_post_thumbnail() ): ?>
-                    <?php the_post_thumbnail();  ?>
-                <?php endif; ?>
-              </figure>
-              <h3 class="text-center"><?php the_title(); ?></h3>
-            </div>
-          </a>
+          <li>
+            <a href="<?php the_permalink(); ?>">
+              <div class="top-card portfolio-post flex">
+                <figure class="flex-1">
+                  <?php if( has_post_thumbnail() ): ?>
+                      <?php the_post_thumbnail();  ?>
+                  <?php endif; ?>
+                </figure>
+
+                <div class="top-card__contents text-center flex-2">
+                  <h3><?php the_title(); ?></h3>
+                  <h4><?php the_subtitle(); ?></h4>
+                  <p>続きを見る</p>
+                </div>
+              </div>
+            </a>
+        </li>
         <?php endforeach; endif; ?>
+      </ul>
 
       <a href="https://uraura-design.site/category/portfolio/">
         <div class="btna text-center">
@@ -122,7 +134,7 @@
       ?>
       <ul class="dailystudy-list">
         <?php if($posts): foreach($posts as $post): setup_postdata($post); ?>
-          <li class="dailystudy-post">
+          <li class="top-card dailystudy-post">
             <figure class="alignfull">
               <?php if( has_post_thumbnail() ): ?>
                   <?php the_post_thumbnail();  ?>
