@@ -108,7 +108,7 @@
     </section>
 
     <section class="section dailystudy">
-      <h2 class="text-center">DailyStudy</h2>
+      <h2 class="text-center next-is-text">DailyStudy</h2>
 
       <p>DailyStudyではcssやJavaScriptの勉強の一環として投稿しているブログです。</p>
 
@@ -148,6 +148,20 @@
       <a href="https://uraura-design.site/category/dailystudy/">
         <div class="btna text-center">
           <span class="text-center">DailyStudy一覧を見る</span>
+        </div>
+      </a>
+
+    </section>
+
+
+    <section class="section contact">
+      <h2 class="text-center next-is-text">Contact</h2>
+
+      <p class="text-center">最後までポートフォリオサイトを見ていただき誠にありがとうございます。<br>お問い合わせはこちらからお願いいたします。</p>
+
+      <a href="https://uraura-design.site/contact/">
+        <div class="btna text-center">
+          <span class="text-center">お問い合わせはこちら</span>
         </div>
       </a>
 

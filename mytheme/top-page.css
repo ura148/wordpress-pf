@@ -153,6 +153,11 @@ h1 {
 		margin-bottom: 95px;
 		font-size: 5.6rem;
 	}
+
+	h2.next-is-text{
+		margin-bottom: 41px;
+	}
+
 	.br__sp{
 		display: none;
 	}
@@ -169,7 +174,7 @@ h1 {
 	　btn
 	ーーーーーーーーーーーーーーーーー*/
 	section .btna{
-		margin: 120px auto;
+		margin: 32px auto 0;
 	}
 
 	/*ーーーーーーーーーーーーーーーーー
@@ -273,5 +278,20 @@ h1 {
 	/*ーーーーーーーーーーーーーーーーー
 	　DailyStudy
 	ーーーーーーーーーーーーーーーーー*/
+	.dailystudy-list{
+		margin: 32px auto 0;
+	}
+
+	/*ーーーーーーーーーーーーーーーーー
+	　contact
+	ーーーーーーーーーーーーーーーーー*/
+	.contact .btna{
+		margin-bottom: 160px;
+	}
+
+
+
+
+
 
 }
