@@ -72,10 +72,10 @@
 
     </section>
 
-    <section class="section">
+    <section class="section characteristics">
       <h2 class="text-center">Characteristics</h2>
 
-      <ul>
+      <ul class="flex">
         <li class="character-items">
           <div class="character-box">
             <?php echo "<img src='https://uraura-design.site/wp-content/themes/mytheme/img/top/chara1.png'>" ?>

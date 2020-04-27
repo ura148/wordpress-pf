@@ -259,9 +259,15 @@ h1 {
 	}
 
 	/*ーーーーーーーーーーーーーーーーー
-	　portfolios
+	　Characteristics
 	ーーーーーーーーーーーーーーーーー*/
-	.
+	.characteristics .flex{
+		justify-content: space-between;
+	}
+	.flex .character-items{
+		flex-basis: 30%;
+		margin-bottom: 0;
+	}
 
 
 
