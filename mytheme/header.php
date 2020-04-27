@@ -20,7 +20,7 @@
     <?php wp_body_open(); ?>
 
     <header class="myhead">
-      <div class="mycontainer">
+      <div class="header-menu-bar">
         <a href="<?php echo esc_url( home_url( '/' )); ?>">
           <?php bloginfo( 'name' ); ?>
         </a>

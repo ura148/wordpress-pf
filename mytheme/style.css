@@ -54,6 +54,8 @@ body *::after {
   box-sizing: inherit;
 }
 
+
+
 /*ーーーーーーーーーーーーーーーーー
 　フォント設定
 ーーーーーーーーーーーーーーーーー*/
@@ -69,11 +71,11 @@ body *::after {
   --f6: 0.8em; /* 39.04px */
 
   --bacecolor: #63a211; /* 基本色 */
-  --gradient: linear-gradient( 79.7deg, rgba(34,126,34,1) 8.2%, rgba(99,162,17,1)84.9% );
+
 
   --myfont: 'Josefin Sans', sans-serif;
 
-  --myw: 720px; /* 標準幅 */
+  --myw: 768px; /* 標準幅 */
 }
 /*ーーーーーーーーーーーーーーーーー
 　/変数
@@ -298,14 +300,14 @@ a:hover{
   width: 100vw;
   top: 0;
   left: 0;
+  z-index: 100;
 }
 
-.myhead > .mycontainer{
+.header-menu-bar{
   align-items: center; /* 上下方向の中央揃え */
   padding: 20px 18px;
   margin: 0;
   color: #F8FAFC;
-
 }
 
 .myhead a {
@@ -326,8 +328,7 @@ a:hover{
 ーーーーーーーーーーーーーーーーー*/
 .myfoot{
   padding: 16px;
-  background-color: var(--bacecolor);
-  background-image: var(--gradient);
+  background-color: #0a0a0c;
   color: #ffffff;
   text-align: center
 }
