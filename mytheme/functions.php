@@ -80,6 +80,8 @@ function load_js() {
 
     //Google CDNのjQueryを出力
     wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), NULL, true );
+
+    wp_enqueue_script( 'main-script', get_template_directory_uri() . '/js/main.js', array(), NULL, true );
   }
 }
 add_action( 'init', 'load_js' );
