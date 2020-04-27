@@ -106,16 +106,6 @@
           </div>
         </li>
 
-        <li class="character-items">
-          <div class="character-box">
-            <?php echo "<img src='https://uraura-design.site/wp-content/themes/mytheme/img/top/chara4.png'>" ?>
-
-            <div class="character-text">
-              <p>好きなものはとことん追求する。SWが好きすぎて1人シカゴまで旅立ったことがあります。</p>
-            </div>
-          </div>
-        </li>
-
       </ul>
     </section>
 
