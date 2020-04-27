@@ -66,3 +66,20 @@ add_action( 'widgets_init','mytheme_widgets' );
 
 
 register_nav_menu('mainmenu', 'メインメニュー');
+
+
+
+
+
+
+
+function load_js() {
+  if ( !is_admin() ){
+    //jQueryを登録解除
+    wp_deregister_script( 'jquery' );
+
+    //Google CDNのjQueryを出力
+    wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), NULL, true );
+  }
+}
+add_action( 'init', 'load_js' );
