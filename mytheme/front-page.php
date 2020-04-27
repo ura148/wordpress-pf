@@ -29,7 +29,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section portfolios">
 
       <h2 class="text-center">Portfolios</h2>
 
@@ -41,8 +41,6 @@
       ?>
 
       <ul>
-
-
         <?php if($posts): foreach($posts as $post): setup_postdata($post); ?>
           <li>
             <a href="<?php the_permalink(); ?>">
@@ -109,7 +107,7 @@
       </ul>
     </section>
 
-    <section class="section">
+    <section class="section dailystudy">
       <h2 class="text-center">DailyStudy</h2>
 
       <p>DailyStudyではcssやJavaScriptの勉強の一環として投稿しているブログです。</p>
@@ -124,19 +122,23 @@
       ?>
       <ul class="dailystudy-list">
         <?php if($posts): foreach($posts as $post): setup_postdata($post); ?>
-          <li class="top-card dailystudy-post">
-            <figure class="alignfull">
-              <?php if( has_post_thumbnail() ): ?>
-                  <?php the_post_thumbnail();  ?>
-              <?php endif; ?>
-            </figure>
 
-            <h3 class="text-center"><?php the_title(); ?></h3>
-            <p class="post-time text-center"><?php the_time('Y/m/d') ?></p>
-
+          <li>
             <a href="<?php the_permalink() ?>">
-              <div class="btna text-center">
-                <span class="text-center">詳しく見る</span>
+              <div class="top-card dailystudy-post flex">
+
+                <figure class="flex-1">
+                  <?php if( has_post_thumbnail() ): ?>
+                      <?php the_post_thumbnail();  ?>
+                  <?php endif; ?>
+                </figure>
+
+                <div class="top-card__contents text-center flex-2">
+                  <h3 class="text-center"><?php the_title(); ?></h3>
+                  <h4 class="post-time text-center"><?php the_time('Y/m/d') ?></h4>
+                  <p>続きを見る</p>
+                </div>
+
               </div>
             </a>
           </li>

@@ -191,8 +191,9 @@ h1 {
 
 	.top-card h3{
 		margin-top: 44px;
-		margin-bottom: 0;
+		margin-bottom: 10px;
 		font-size: 3.2rem;
+		line-height: 1.2;
 	}
 
 	.top-card h4{
@@ -208,7 +209,7 @@ h1 {
 		transform: translateX(-50%);
 	}
 
-	li:nth-child(2n) .flex{
+	.portfolios li:nth-child(2n) .flex{
 		flex-direction: row-reverse;
 	}
 
@@ -269,8 +270,8 @@ h1 {
 		margin-bottom: 0;
 	}
 
-
-
-
+	/*ーーーーーーーーーーーーーーーーー
+	　DailyStudy
+	ーーーーーーーーーーーーーーーーー*/
 
 }
