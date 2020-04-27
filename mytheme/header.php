@@ -20,17 +20,32 @@
     <?php wp_body_open(); ?>
 
     <header class="myhead">
-      <div class="header-menu-bar">
+      <div class="header-menu-bar flex">
         <a href="<?php echo esc_url( home_url( '/' )); ?>">
-          <?php bloginfo( 'name' ); ?>
+          <span><?php bloginfo( 'name' ); ?></span>
         </a>
 
-        <!-- <button class="btn-trigger">
+        <!-- <div class="">
+          <a href="<?php echo get_category_link( 7 ); ?>">
+            <span>Portfolio</span>
+          </a>
+
+          <a href="<?php echo get_page_link( 392 ); ?>">
+            <span>Blog</span>
+          </a>
+
+          <a href="<?php echo get_page_link( 432 ); ?>">
+            <span>contact</span>
+          </a>
+        </div> -->
+
+        <button class="btn-trigger">
+          <span class="btn-nav-line"></span>
           <span class="btn-nav-line"></span>
           <span class="btn-nav-line"></span>
           <span class="btn-menu menu">menu</span>
           <span class="btn-menu close">close</span>
-        </button> -->
+        </button>
 
         <!-- <div class="header-nav">
           <?php wp_nav_menu( array(

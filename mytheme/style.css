@@ -305,22 +305,124 @@ a:hover{
 
 .header-menu-bar{
   align-items: center; /* 上下方向の中央揃え */
-  padding: 20px 18px;
+  padding: 8px 18px;
   margin: 0;
   color: #F8FAFC;
 }
 
+.header-menu-bar.flex{
+  display: flex;
+  justify-content: space-between;
+}
+
 .myhead a {
-  font-size: var(--f3);
+  font-size: 1.6rem;
   font-family: trajan-pro-3, arial;
 }
 
 .myhead p {
   font-size: var(--f6);
 }
+
+.header-nav{
+	padding-top: 92px;
+	width: 100%;
+	height: 120vh;
+	background-color: rgba(0,9,44,0.8);
+}
 /*ーーーーーーーーーーーーーーーーー
 　/header
 ーーーーーーーーーーーーーーーーー*/
+
+/*ーーーーーーーーーーーーーーーーー
+　btn(header)
+ーーーーーーーーーーーーーーーーー*/
+.btn-trigger{
+  appearance: none;
+	-webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+	display: block;
+	position: relative;
+	width: 34px;
+	height: 32px;
+	z-index: 50;
+}
+
+.btn-menu{
+  font-family: trajan-pro-3, arial;
+	letter-spacing: 0.01rem;
+	display: block;
+	position: absolute;
+	line-height: 1rem;
+	color: #ffffff;
+	font-size: 1rem;
+	text-transform: uppercase;
+	bottom: 0;
+}
+
+.btn-trigger .menu{
+	opacity: 1;
+	transition: all 0.5s;
+}
+
+.btn-trigger .close{
+	display: block;
+	transition: all 0.5s;
+	opacity: 0;
+}
+
+.btn-trigger.active .menu{
+	opacity: 0;
+}
+
+.btn-trigger.active .close{
+	font-size: 1.1rem;
+	opacity: 1;
+	top: 28px;
+	left: -2px;
+}
+
+.btn-nav-line{
+	position: absolute;
+  display: block;
+  width: 34px;
+  height: 2px;
+	border-radius: 1px;
+  background-color: #ffffff;
+	transition: all 0.5s;
+}
+
+.btn-nav-line:first-of-type{
+	top: 0;
+}
+
+.btn-nav-line:nth-child(2){
+  top: 7px;
+  right: 0;
+  width: 22px
+}
+
+.btn-nav-line:nth-child(3){
+	top: 14px;
+}
+
+.btn-trigger.active .btn-nav-line:first-of-type{
+	transform: rotate(45deg) ;
+	top: 9px;
+}
+
+.btn-trigger.active .btn-nav-line:nth-child(2){
+  display: none;
+}
+
+.btn-trigger.active .btn-nav-line:nth-child(3){
+	transform: rotate(-45deg) ;
+	top: 9px;
+}
+
 
 
 /*ーーーーーーーーーーーーーーーーー
@@ -371,100 +473,6 @@ a:hover{
 　/mypostlist
 ーーーーーーーーーーーーーーーーー*/
 
-.header-nav{
-	padding-top: 92px;
-	width: 100%;
-	height: 120vh;
-	background-color: rgba(0,9,44,0.8);
-}
-
-.btn{
-	padding: 7px 0 2px;
-	margin: 0 auto;
-	border: 1px solid #ffffff;
-	width: 269px;
-}
-
-.btn span{
-	line-height: 1;
-	font-weight: lighter;
-	text-transform: uppercase;
-	color: #fff;
-}
-
-.btn-trigger{
-	-webkit-appearance: none;
-	display: block;
-	position: absolute;
-	top: 16px;
-	right: 0;
-	width: 34px;
-	height: 28px;
-	z-index: 50;
-}
-
-.btn-menu{
-	font-family: 'brigade','a-otf-ryumin-pr6n', sans-serif;
-	letter-spacing: 0.07rem;
-	display: block;
-	position: absolute;
-	line-height: 1rem;
-	color: #ffffff;
-	font-size: 1rem;
-	text-transform: uppercase;
-	top: 15px;
-}
-
-.btn-trigger .menu{
-	opacity: 1;
-	transition: all 0.5s;
-}
-
-.btn-trigger .close{
-	display: block;
-	letter-spacing: 0.04rem;
-	transition: all 0.5s;
-	opacity: 0;
-}
-
-.btn-trigger.active .menu{
-	opacity: 0;
-}
-
-.btn-trigger.active .close{
-	font-size: 1.1rem;
-	opacity: 1;
-	top: 28px;
-	left: -2px;
-}
-
-.btn-nav-line{
-	position: absolute;
-  display: block;
-  width: 34px;
-  height: 2px;
-	border-radius: 1px;
-  background-color: #ffffff;
-	transition: all 0.5s;
-}
-
-.btn-nav-line:first-of-type{
-	top: 0;
-}
-
-.btn-nav-line:nth-child(2){
-	top: 7px;
-}
-
-.btn-trigger.active .btn-nav-line:first-of-type{
-	transform: rotate(45deg) ;
-	top: 9px;
-}
-
-.btn-trigger.active .btn-nav-line:nth-child(2){
-	transform: rotate(-45deg) ;
-	top: 9px;
-}
 
 /* Tablet&PC version */
 @media (min-width: 804px) {
