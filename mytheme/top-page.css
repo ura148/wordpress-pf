@@ -9,6 +9,7 @@ url("https://uraura-design.site/wp-includes/fonts/star-jedi_[allfont.net].eot") 
 .text-center{
 	text-align: center;
 }
+
 p {
 	margin: 0;
 	line-height: 1.5
@@ -21,6 +22,10 @@ ul {
 
 li {
 	list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+	border-bottom: none;
 }
 
 h2 {
