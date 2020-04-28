@@ -1,22 +1,11 @@
 @charset "UTF-8";
-/* reset */
 
-html{
-	font-size:62.5%;/*16px×62.5％＝10px*/
+@font-face{
+font-family: 'Star Jedi';
+src: url("https://uraura-design.site/wp-includes/fonts/star-jedi_[allfont.net].woff") format("woff"),
+url("https://uraura-design.site/wp-includes/fonts/star-jedi_[allfont.net].eot") format("eot");
 }
 
-body {
-	font-family: trajan-pro-3,'a-otf-ryumin-pr6n', sans-serif;
-	-webkit-text-size-adjust: 100%;
-	text-size-adjust: 100%;
-  color: #707070;
-  font-size: 1.6rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: antialiased;
-	letter-spacing: : 0.05rem;
-}
-
-/* bace */
 .text-center{
 	text-align: center;
 }
