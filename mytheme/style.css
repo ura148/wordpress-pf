@@ -538,3 +538,29 @@ a:hover{
     margin-right: -150px;
   }
 }
+
+
+
+
+/*ーーーーーーーーーーーーーーーーー
+　animation
+ーーーーーーーーーーーーーーーーー*/
+.fade-animation{
+	opacity: 0;
+}
+.fade-in{
+	animation: fadein 0.8s forwards ease-in-out;
+}
+
+@keyframes fadein {
+	0%{
+		opacity: 0;
+		transform: translateY(80px);
+	}
+
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+}

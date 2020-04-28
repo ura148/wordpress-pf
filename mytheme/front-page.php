@@ -41,7 +41,7 @@
           <?php if($posts): foreach($posts as $post): setup_postdata($post); ?>
             <li>
               <a href="<?php the_permalink(); ?>">
-                <div class="top-card portfolio-post flex">
+                <div class="top-card portfolio-post flex fade-animation">
                   <figure class="flex-1">
                     <?php if( has_post_thumbnail() ): ?>
                         <?php the_post_thumbnail();  ?>
@@ -122,7 +122,7 @@
 
             <li>
               <a href="<?php the_permalink() ?>">
-                <div class="top-card dailystudy-post flex">
+                <div class="top-card dailystudy-post flex fade-animation">
 
                   <figure class="flex-1">
                     <?php if( has_post_thumbnail() ): ?>
