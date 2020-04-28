@@ -545,22 +545,48 @@ a:hover{
 /*ーーーーーーーーーーーーーーーーー
 　animation
 ーーーーーーーーーーーーーーーーー*/
-.fade-animation{
-	opacity: 0;
-}
-.fade-in{
-	animation: fadein 0.8s forwards ease-in-out;
-}
 
-@keyframes fadein {
-	0%{
+
+	/*ーーーーーーーーーーーーーーーーー
+	　fade-in
+	ーーーーーーーーーーーーーーーーー*/
+	.fade-animation{
 		opacity: 0;
-		transform: translateY(80px);
+	}
+	.fade-in{
+		animation: fadein 0.8s forwards ease-in-out;
 	}
 
-	100%{
-		opacity: 1;
-		transform: translateY(0);
+	@keyframes fadein {
+		0%{
+			opacity: 0;
+			transform: translateY(80px);
+		}
+
+		100%{
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+	/*ーーーーーーーーーーーーーーーーー
+	　/fade-in
+	ーーーーーーーーーーーーーーーーー*/
+
+	/*ーーーーーーーーーーーーーーーーー
+	　slide-in
+	ーーーーーーーーーーーーーーーーー*/
+	.slide-in{
+		display: block;
+		animation: slidein 0.4s forwards ease-in-out;
 	}
 
-}
+	@keyframes slidein {
+		0%{
+			transform: translatex(61.8vw);
+		}
+
+		100%{
+			transform: translatex(0);
+		}
+
+	}

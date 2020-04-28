@@ -3,7 +3,7 @@
 //
 $(".btn-trigger").on("click",function(){
   $(this).toggleClass("active");
-  $(".header-nav").fadeToggle(500);
+  $(".header-nav").toggleClass("slide-in");
 });
 //
 //
