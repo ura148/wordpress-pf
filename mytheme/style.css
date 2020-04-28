@@ -75,7 +75,7 @@ body *::after {
 
   --myfont: 'Josefin Sans', sans-serif;
 
-  --myw: 768px; /* 標準幅 */
+  --myw: 732px; /* 標準幅 */
 }
 /*ーーーーーーーーーーーーーーーーー
 　/変数
@@ -492,9 +492,9 @@ a:hover{
 
 
 /* Tablet&PC version */
-@media (min-width: 804px) {
+@media (min-width: 768px) {
   .mycontainer{
-    max-width: 768px;
+    max-width: 732px;
     margin-left: auto;
     margin-right: auto;
   }

@@ -49,18 +49,48 @@ h3 {
 	font-size: 2rem;
 }
 
+.section{
+	margin-top: 66px;
+}
+
 figure {
 	margin: 0;
 }
 
-/* card */
+/* top-card */
 .top-card img {
-	height: 61.80vw;
+	height: calc( (100vw - 36px) / 1.618 );
 	object-fit: cover;
 	object-position: center;
 	vertical-align: bottom;
 	display: block;
 }
+
+.top-card{
+	box-shadow: 0 3px 6px 2px rgba(0,0,0,0.32);
+	margin-bottom: 32px;
+}
+
+.top-card h3{
+	margin-top: 22px;
+	margin-bottom: 12px;
+	font-size: 2.8rem;
+	line-height: 1.2;
+}
+
+.top-card h4{
+	margin-top: 0;
+	margin-bottom: 32px;
+	line-height: 1;
+	font-size: 1.6rem;
+	font-weight: lighter;
+}
+
+.top-card p{
+	padding-bottom: 12px;
+	line-height: 1;
+}
+
 
 /* btn */
 .btna{
@@ -181,7 +211,6 @@ h1 {
 	　top-card
 	ーーーーーーーーーーーーーーーーー*/
 	.top-card{
-		box-shadow: 0 3px 6px 2px rgba(0,0,0,0.32);
 		margin-bottom: 66px;
 	}
 
@@ -223,11 +252,11 @@ h1 {
 	}
 
 	.flex-1{
-		flex-basis: 376px;
+		flex-basis: 50%;
 	}
 
 	.flex-2{
-		flex-basis: 392px;
+		flex-basis: 50%;
 	}
 
 	/*ーーーーーーーーーーーーーーーーー
