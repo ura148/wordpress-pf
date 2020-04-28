@@ -164,12 +164,20 @@ h1 {
 .dailystudy-list{
 	margin: 32px 0;
 }
-.dailystudy-post h3{
-	margin-bottom: 0;
-}
 
 .dailystudy-post .btna{
 	margin-top: 22px;
+}
+
+.dailystudy p{
+	line-height: 1.5;
+}
+
+/*ーーーーーーーーーーーーーーーーー
+　contact
+ーーーーーーーーーーーーーーーーー*/
+.contact .btna{
+	margin: 32px 0 66px;
 }
 
 
