@@ -25,7 +25,17 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6{
+	padding: 8px 0 8px 8px;
   font-family:  trajan-pro-3,'a-otf-ryumin-pr6n', sans-serif;
+	border-bottom: 2px solid var(--bacecolor);
+}
+
+h4,h5,h6{
+	border-bottom: 1px
+}
+
+h1{
+	border-bottom: none;
 }
 
 figure {
@@ -73,7 +83,7 @@ img {
 　変数
 ーーーーーーーーーーーーーーーーー*/
 :root {
-  --bacecolor: #63a211; /* 基本色 */
+  --bacecolor: #f76756; /* 基本色 */
 
   --myw: 732px; /* 標準幅 */
 }
@@ -82,7 +92,7 @@ img {
 ーーーーーーーーーーーーーーーーー*/
 
 /*ーーーーーーーーーーーーーーーーー
-　フォント設定
+　フォント・見出し設定
 ーーーーーーーーーーーーーーーーー*/
 
 body{
@@ -95,26 +105,26 @@ p{
 }
 
 h1{
-  font-size: 4rem;
+  font-size: 3.2rem;
 }
 
 h2{
-  font-size: 3.4rem;
-}
-
-h3{
   font-size: 2.8rem;
 }
 
+h3{
+  font-size: 2.4rem;
+}
+
 h4{
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 h5{
   font-size: 1.6rem;
 }
 
 h6{
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 /*ーーーーーーーーーーーーーーーーー

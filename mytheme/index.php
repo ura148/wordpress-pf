@@ -17,9 +17,6 @@
         <?php the_content(); ?>
 
         <?php the_post_navigation(); ?>
-
-        <!-- footer menuの呼び出し -->
-        <?php get_sidebar(); ?>
       </article>
     <?php endwhile; endif; ?>
 

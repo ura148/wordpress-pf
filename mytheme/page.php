@@ -8,8 +8,7 @@
 
     <?php the_content(); ?>
 
-    <!-- footer menuの呼び出し -->
-    <?php get_sidebar(); ?>
+
   </article>
 <?php endwhile; endif; ?>
 
