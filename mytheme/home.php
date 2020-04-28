@@ -3,8 +3,7 @@
 <main class="mycontainer">
   <div class="alignwide">
     <div class="myposthead">
-      <h1>最新情報</h1>
-      <p>RECENT</p>
+      <h1>Blog</h1>
     </div>
 
     <div class="mypostlist">
