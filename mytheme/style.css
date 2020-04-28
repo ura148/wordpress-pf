@@ -503,13 +503,13 @@ a:hover{
   }
 
   .alignfull{
-    margin-left: calc( ( 100vw - var(--myw);) / 2 * -1 );
-    margin-right: calc( ( 100vw - var(--myw);) / 2 * -1 );
+    margin-left: calc( ( 100vw - var(--myw)) / 2 * -1 );
+    margin-right: calc( ( 100vw - var(--myw)) / 2 * -1 );
   }
 
   .alignwide{
-    margin-left: calc( ( 100vw - var(--myw);) / 4 * -1 );
-    margin-right: calc( ( 100vw - var(--myw);) / 4 * -1 );
+    margin-left: calc( ( 100vw - var(--myw)) / 4 * -1 );
+    margin-right: calc( ( 100vw - var(--myw)) / 4 * -1 );
   }
 }
 
