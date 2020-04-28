@@ -26,7 +26,7 @@ body {
 
 h1,h2,h3,h4,h5,h6{
 	padding: 8px 0 8px 8px;
-  font-family:  trajan-pro-3,'a-otf-ryumin-pr6n', sans-serif;
+  font-family: trajan-pro-3,'a-otf-ryumin-pr6n', sans-serif;
 	border-bottom: 2px solid var(--bacecolor);
 }
 
@@ -35,6 +35,8 @@ h4,h5,h6{
 }
 
 h1{
+	padding: 0;
+	margin: 22px 0 0;
 	border-bottom: none;
 }
 
@@ -92,7 +94,7 @@ img {
 ーーーーーーーーーーーーーーーーー*/
 
 /*ーーーーーーーーーーーーーーーーー
-　フォント・見出し設定
+　font,title,subtitle設定
 ーーーーーーーーーーーーーーーーー*/
 
 body{
@@ -127,8 +129,20 @@ h6{
   font-size: 1.2rem;
 }
 
+.myposthead .sub-title{
+	margin-top: 8px;
+	margin-bottom: 24px;
+	font-family: trajan-pro-3,'a-otf-ryumin-pr6n', sans-serif;
+	line-height: 1;
+	color: #707070;
+}
+
+.datetime{
+	font-family: trajan-pro-3,'a-otf-ryumin-pr6n', sans-serif;
+	line-height: 1;
+}
 /*ーーーーーーーーーーーーーーーーー
-　/フォント設定
+　/font,title,subtitle設定
 ーーーーーーーーーーーーーーーーー*/
 
 
@@ -208,15 +222,6 @@ a:hover{
   list-style-type: none;
 }
 
-.post-categories::before{
-  content:"\f318";
-  font-family: "dashicons";
-  color: var(--bacecolor);
-  font-size: var(--f2);
-  line-height: 1;
-  margin-right: 5px;
-}
-
 .post-categories li:not(:last-child){
   margin-right: 10px;
 }
@@ -224,7 +229,7 @@ a:hover{
 .post-categories a {
   padding: 3px 10px;
   border: solid 1px currentColor;/*currentColorにすることによって文字と同じ色にすることができる！*/
-  border-radius: 10px;
+  border-radius: 16px;
   color: var(--bacecolor);
   font-size: var(--f6);
 }
