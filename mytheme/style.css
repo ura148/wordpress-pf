@@ -40,6 +40,10 @@ h1{
 	border-bottom: none;
 }
 
+li {
+	list-style: none;
+}
+
 figure {
   margin-left: 0;
   margin-right: 0;
